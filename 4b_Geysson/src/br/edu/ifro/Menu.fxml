@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,11 +8,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuController">
+<AnchorPane id="AnchorPane" fx:id="numero1" prefHeight="216.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <JFXButton layoutX="135.0" layoutY="34.0" />
-      <JFXCheckBox layoutX="70.0" layoutY="100.0" />
-      <JFXComboBox layoutX="187.0" layoutY="116.0" />
+      <JFXTextField fx:id="txtNumero1" layoutX="99.0" layoutY="56.0" />
+      <JFXTextField fx:id="txtNumero2" layoutX="398.0" layoutY="56.0" />
+      <JFXButton fx:id="btnSoma" layoutX="135.0" layoutY="116.0" onAction="#soma" text="Soma" />
+      <JFXButton fx:id="btnMenos" layoutX="224.0" layoutY="116.0" onAction="#menos" text="Subtração" />
+      <JFXButton fx:id="btnVezes" layoutX="335.0" layoutY="116.0" onAction="#vezes" text="Multiplicar" />
+      <JFXButton fx:id="btnDividir" layoutX="440.0" layoutY="116.0" onAction="#dividir" text="Dividir" />
+      <JFXTextField fx:id="txtResultado" layoutX="247.0" layoutY="167.0" />
+      <Label layoutX="100.0" layoutY="29.0" text="Primeiro numero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="29.0" text="Segundo numero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
